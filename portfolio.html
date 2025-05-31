@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio | W3Prime</title>
+  <meta name="description" content="Confira os projetos profissionais criados pela W3Prime." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="../w3prime/imagens/favicon.ico" type="image/x-icon" />
+  <style>
+    /* Navbar sticky e sombra */
+    nav.navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    /* Cards com hover elegante */
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
+      cursor: pointer;
+      opacity: 0.95;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+      opacity: 1;
+    }
+
+    /* Footer estilos */
+    footer {
+      background-color: #1f1f3d;
+      color: #cfcfe8;
+    }
+    footer a {
+      color: #a6a6c8;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    footer a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    /* Botão voltar ao topo */
+    #btn-topo {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      display: none;
+      background: #4e54c8;
+      border: none;
+      border-radius: 50%;
+      color: white;
+      width: 45px;
+      height: 45px;
+      font-size: 1.8rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(78, 84, 200, 0.6);
+      z-index: 1050;
+      transition: background-color 0.3s ease;
+    }
+    #btn-topo:hover {
+      background-color: #3b3fc1;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container-lg">
+      <a class="navbar-brand" href="index.html">W3Prime</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Portfólio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light py-5 text-center">
+    <div class="container-lg">
+      <h1 class="display-5 fw-bold">Nosso Portfólio</h1>
+      <p class="lead text-secondary">Veja alguns projetos que já entregamos com excelência</p>
+    </div>
+  </header>
+
+  <section class="container-lg py-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <a href="projeto1.html" class="text-decoration-none text-dark" target="_blank" rel="noopener noreferrer" aria-label="Projeto 1 - Site institucional para empresa de tecnologia">
+          <div class="card h-100 shadow-sm">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Projeto 1" />
+            <div class="card-body">
+              <h5 class="card-title">Projeto 1</h5>
+              <p class="card-text">Site institucional para empresa de tecnologia.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="projeto2.html" class="text-decoration-none text-dark" target="_blank" rel="noopener noreferrer" aria-label="Projeto 2 - Loja virtual com sistema de carrinho e pagamentos">
+          <div class="card h-100 shadow-sm">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Projeto 2" />
+            <div class="card-body">
+              <h5 class="card-title">Projeto 2</h5>
+              <p class="card-text">Loja virtual com sistema de carrinho e pagamentos.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="projeto3.html" class="text-decoration-none text-dark" target="_blank" rel="noopener noreferrer" aria-label="Projeto 3 - Landing page com foco em conversão">
+          <div class="card h-100 shadow-sm">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Projeto 3" />
+            <div class="card-body">
+              <h5 class="card-title">Projeto 3</h5>
+              <p class="card-text">Landing page com foco em conversão.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 mt-auto">
+    <div class="container-lg">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>W3Prime</h5>
+          <p>Agência de criação de sites profissionais.<br />Seu parceiro digital para crescer online.</p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>Links Rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Siga-nos</h5>
+          <a href="#" aria-label="Instagram" class="me-3 text-decoration-none"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+          <a href="#" aria-label="Facebook" class="me-3 text-decoration-none"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+          <a href="#" aria-label="LinkedIn" class="text-decoration-none"><i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
+        </div>
+      </div>
+      <hr class="my-3" />
+      <p class="text-center mb-0">&copy; 2025 W3Prime. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <button id="btn-topo" aria-label="Voltar ao topo"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Mostrar botão voltar ao topo ao rolar 100px
+    const btnTopo = document.getElementById('btn-topo');
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 100) {
+        btnTopo.style.display = 'block';
+      } else {
+        btnTopo.style.display = 'none';
+      }
+    });
+
+    // Scroll suave ao topo ao clicar
+    btnTopo.addEventListener('click', () => {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  </script>
+</body>
+</html>
